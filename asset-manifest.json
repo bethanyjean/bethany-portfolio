@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bethany-portfolio/static/css/main.a9e63ffa.css",
+    "main.js": "/bethany-portfolio/static/js/main.f87fe84c.js",
+    "static/js/787.a07e6fdd.chunk.js": "/bethany-portfolio/static/js/787.a07e6fdd.chunk.js",
+    "static/media/Bethany-Griffin.png": "/bethany-portfolio/static/media/Bethany-Griffin.cb4d714a007baa19c4d6.png",
+    "static/media/0.png": "/bethany-portfolio/static/media/0.544a1ef8a03a65e9f966.png",
+    "static/media/1.png": "/bethany-portfolio/static/media/1.472aa290c03a89718274.png",
+    "static/media/3.png": "/bethany-portfolio/static/media/3.3b7df62907777150e74d.png",
+    "static/media/2.png": "/bethany-portfolio/static/media/2.b61a0c21b2c7e0183203.png",
+    "static/media/5.png": "/bethany-portfolio/static/media/5.d618590925042c2aa311.png",
+    "static/media/4.png": "/bethany-portfolio/static/media/4.dd6d4f9c243022b0b671.png",
+    "static/media/B (2).png": "/bethany-portfolio/static/media/B (2).7e99d5ddcebe19ebda13.png",
+    "static/media/B (3).png": "/bethany-portfolio/static/media/B (3).3e24718afdd2791ccfbf.png",
+    "static/media/GitHub.png": "/bethany-portfolio/static/media/GitHub.a8a5fa2d913b039d8c3f.png",
+    "index.html": "/bethany-portfolio/index.html",
+    "main.a9e63ffa.css.map": "/bethany-portfolio/static/css/main.a9e63ffa.css.map",
+    "main.f87fe84c.js.map": "/bethany-portfolio/static/js/main.f87fe84c.js.map",
+    "787.a07e6fdd.chunk.js.map": "/bethany-portfolio/static/js/787.a07e6fdd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9e63ffa.css",
+    "static/js/main.f87fe84c.js"
+  ]
+}
