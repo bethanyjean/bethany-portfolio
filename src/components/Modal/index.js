@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Modal = ({ onClose, currentProject }) => {
   const { name, description, appLink, gitHubLink, index } = currentProject;
 
@@ -12,13 +13,21 @@ const Modal = ({ onClose, currentProject }) => {
           src={require(`../../assets/large/${index}.png`)}
           alt="project screenshot"
         />
-        <p>{description}</p>
-        <p>{appLink}</p>
-        <p>{gitHubLink}</p>
+        <p className='modalDescription'>{description}</p>
+
+        <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
+          <img className = 'gitHub' src = {require(`../../assets/cover/GitHub.png`)}>
+        </img></a>
+
+        <a href={appLink} target="_blank" rel="noopener noreferrer">
+          <img className = "Bimage" src = {require(`../../assets/cover/B (2).png`)}>
+        </img></a>
+
+        <div></div>
+        
         <button type="button" onClick={onClose}>
           Close
-        </button>
-      </div>
+        </button></div>
     </div>
   );
 };

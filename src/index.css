@@ -85,9 +85,10 @@ a {
   font-weight: bold;
 }
 
-/* a:hover {
+header a:hover {
   text-decoration: underline;
-} */
+  color: var(--tertiary);
+}
 
 header {
   background: var(--dark);
@@ -112,6 +113,7 @@ button {
 
 button:hover {
   opacity: 0.8;
+  color: var(--tertiary);
 }
 
 button[disabled] {
@@ -153,12 +155,14 @@ li {
   font-variant: small-caps;
 }
 
+
 nav a {
   font-variant: small-caps;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: var(--tertiary);
 }
 
 nav li {
@@ -261,7 +265,7 @@ textarea {
 }
 
 .modalContainer {
-  background: var(--darker);
+  background: var(--primary);
   border-radius: 5px;
   max-width: 100%;
   margin: 50px auto;
@@ -270,20 +274,33 @@ textarea {
 }
 
 .modalTitle {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.modalDescription {
+  font-size: 25px;
+  font-variant: none;
+  font-weight: bold;
+}
+
+.modalContainer a {
+  color: var(--dark);
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 25px;
 }
 
 button {
-  background: var(--primary);
+  background: var(--light);
   border: 0;
   border-radius: 5px;
-  color: #fff;
+  color: var(--dark);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 30px;
+  margin-top: 30px;
   padding: 10px 15px;
 }
 
@@ -307,4 +324,26 @@ a {
 .flex-column {
   flex: 50%;
   padding: 20px;
+}
+
+.footer {
+  font-variant: small-caps;
+}
+
+.Bimage {
+  transform: scale(.65);
+}
+
+.gitHub {
+  position: relative;
+  top: -85px;
+}
+
+.navImg {
+  width: 5%;
+  border-color: var(--darker);
+  border-style: solid;
+  position: relative;
+  margin: 5px;
+
 }

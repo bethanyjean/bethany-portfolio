@@ -11,8 +11,11 @@ function Nav(props) {
 
     return (
         <header className="flex-row px-1">
-          <h2>
-            <a data-testid="link" href="/">
+          <img className = 'navImg' src = {require(`../../assets/cover/B (3).png`)}>
+        </img>
+        <h2>
+            <a href="/">
+            
               Bethany Griffin
             </a>
           </h2>
