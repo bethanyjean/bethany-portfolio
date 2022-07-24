@@ -9,7 +9,7 @@ const Modal = ({ onClose, currentProject }) => {
       <div className="modalContainer">
         <h3 className="modalTitle">{name} </h3>
         <img
-          src={require(`../../assets/large/${index}.jpg`).default}
+          src={require(`../../assets/large/${index}.png`)}
           alt="project screenshot"
         />
         <p>{description}</p>

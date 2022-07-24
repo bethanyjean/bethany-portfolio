@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react';
-
 function Nav(props) {
     //renders page based on what user has selected in navigation bar
     const {
-      setProjectSelected,
-      projectSelected,
       contactSelected,
       setContactSelected,
+      projectsSelected,
+      setProjectsSelected,
+      setAboutSelected,
+      aboutSelected,
     } = props;
+
     return (
         <header className="flex-row px-1">
           <h2>
@@ -20,23 +21,27 @@ function Nav(props) {
               <li className="mx-2">
                 <a data-testid="about" href="#about" onClick={() => {
                     setContactSelected(false);
-                    setProjectSelected(false);
+                    setProjectsSelected(false);
+                    setAboutSelected(true);
                 }}>
                   About me
                 </a>
               </li>
-              <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+              <li className={`mx-2 ${contactSelected && !projectsSelected && !aboutSelected && 'navActive'}`}>
                 <span onClick={() => {
                     setContactSelected(true);
-                    setProjectSelected(false);
-                }}>Contact</span>
+                    setProjectsSelected(false);
+                    setAboutSelected(false)
+                    }}>
+                    <a>Contact</a> </span>
               </li>
-                <li className={`mx-1 ${projectSelected  && 'navActive'}`}>
+                <li className={`mx-1 ${!contactSelected  && projectsSelected && !aboutSelected && 'navActive'}`}>
                       <span
                     onClick={() => {
-                      setProjectSelected(true);
                       setContactSelected(false);
-                    }}>Projects
+                      setProjectsSelected(true);
+                      setAboutSelected(false)
+                    }}><a>Projects</a>
                   </span>
                 </li>
             </ul>

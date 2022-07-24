@@ -6,22 +6,34 @@ import ContactForm from './components/Contact';
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
-  const [projectSelected, setProjectSelected] = useState(false);
+  const [projectsSelected, setProjectsSelected] = useState(false);
+  const [aboutSelected, setAboutSelected] = useState(false);
 
   return (
     <div>
       <Nav
         contactSelected={contactSelected}
-        projectSelected={projectSelected}
+        projectsSelected={projectsSelected}
+        aboutSelected={aboutSelected}
+        setContactSelected={setContactSelected}
+        setProjectsSelected={setProjectsSelected}
+        setAboutSelected={setAboutSelected}
       ></Nav>
     <main>
-    {!contactSelected ? (
+    {!contactSelected && !projectsSelected ? (
           <>
-            <ProjectList></ProjectList>
             <About></About>
           </>
-        ) : (
+        ) : 
+          !contactSelected && !aboutSelected ? (
+            <>
+            <ProjectList></ProjectList>
+            </>
+          )
+        : (
+          <>
           <ContactForm></ContactForm>
+          </>
         )}
     </main>
     </div>

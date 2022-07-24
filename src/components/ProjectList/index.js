@@ -55,9 +55,9 @@ const ProjectList = () => {
         <Modal onClose={toggleModal} currentProject={currentProject} />
       )}
       <div className="flex-row">
-        {ProjectList.map((image, i) => (
+        {projects.map((image, i) => (
           <img
-            src={require(`../../assets/small/${i}.jpg`).default}
+            src={require(`../../assets/small/${i}.png`)}
             alt={image.name}
             className="img-thumbnail mx-1"
             onClick={() => toggleModal(image, i)}
