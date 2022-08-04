@@ -7,6 +7,12 @@ const ProjectList = () => {
 
   const [projects] = useState([
     {
+      name: 'Sauce Boss',
+      description: 'The application allows users to see a collection of sauces, read reviews, and add their own review.',
+      appLink: 'https://sauceboss.herokuapp.com/',
+      gitHubLink: 'https://github.com/bethanyjean/sauce-boss'
+    },
+    {
         name: 'Sports Seekers',
         description: 'The application allows users to search for local sporting events such as basketball, football, softball, and soccer at various locations.',
         appLink: 'https://serene-beyond-42809.herokuapp.com/',
