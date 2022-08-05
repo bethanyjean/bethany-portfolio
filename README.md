@@ -36,7 +36,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 Node.js, React, JavaScript, CSS, HTML
 
 ## Screenshot
-![Home Page](/src/assets/large/Screenshot.png)
+![Home Page](/Screenshot.png)
 
 ## Links
 GitHub Link: https://github.com/bethanyjean/bethany-portfolio
